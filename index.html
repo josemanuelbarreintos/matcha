@@ -11,14 +11,93 @@
             }
            
             button {
-                color: #025157;
+                background-color:#67b54b;
+                color:#fff;
             }
             body {
                 color: #dda165;
             }
+            header{
+                    margin: 40px 40px 40px;
+                    font-size: 0px;
+            }
+            .header > * {
+                    display: inline-block;
+                  font-size: 16px;
+                  vertical-align: middle;
+                  height: 100%;
+                  line-height: 45px;
+                  font-family: sans-serif;
+            }
+            .logo {
+                width: 15%;
+            }
+            .logo > img {
+                width: 50%;
+            }
+            .navbar{
+                width: 70%;
+                text-align: center;
+                font-weight: 500;
+
+            }
+            .action{
+                width: 15%;
+               
+            }
+            .main{
+                margin: 140px;
+                text-align: center;
+            }
+            li{
+                margin: 25px 25px 25px 25px;
+                display: inline;
+                color:#025157;
+
+            }
+            .buttonn{
+                font-size: 14px;
+                padding: 14px 10px;
+                background-color: #67b54b;
+                border-radius: 5px;
+                border: none;
+                color: #fff;
+            }
+            .action > a{
+                color:#67b54b;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
         </style>
     </head>
+  
+
 <body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src=" https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="img matcha">
+        </a>
+
+        <nav class="navbar">
+        <ul >
+        <li >plataforma</li>
+        <li >eprecios</li>
+        <li >clientes</li>
+        <li >recursos</li>
+        <li >sobre</li>
+        </ul>
+        </nav>
+
+        <div class="action"> 
+            <a>
+                Sign in
+            </a>
+            <button class="buttonn"type="submit"  href="https://google.com/">
+                Start free trial
+            </button>
+        </div>
+    </header>
+    <section class="main">
         <h1>Build your blog. Build your business.</h1>
         <p>
             Instantly publish articles, drive more traffic, grow your email list,
@@ -35,5 +114,6 @@
         </p>
         
         <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/4be27a080000640005083b6d/0x0.png" alt="Mi etiqueta">
+    </section>
     </body>
 </html>
