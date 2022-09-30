@@ -9,9 +9,7 @@ button {
     background-color:#67b54b;
     color:#fff;
 }
-body {
-    color: #dda165;
-}
+
 header{
         margin: 0px 0px 40px;
         padding: 0px 0px;
@@ -98,4 +96,34 @@ li{
     display: flex;
     flex-direction: column ;
     gap: 20px;
+}
+button:hover {
+    background-color: rgb(0, 255, 55);
+}
+.features{
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);  
+    grid-template: repeat(2, 1fr)/repeat(2,1fr);
+    gap: 40px;
+    background-color: #025157;
+    padding: 60px 120px;
+    width: 100%;
+}
+.caracteristica1{
+    display: grid;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: baseline;
+    padding: 36px;
+}
+.feature{
+    display: grid;
+    padding: 30px 20px 40px 40px;
+}
+.featimage{
+    flex: 1;
+    width: 40%;
+    height: 80%;
 }
