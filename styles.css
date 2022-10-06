@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap');
+body{
+    background-color: #fffbf7;
+     font-family: "Open Sans", sans-serif; 
+ }
 h1 {
+    font-size: 45px;
+    font-family: "alegreya", sans-serif; 
     color: rgb(9, 6, 61);
 }
 p {
     color: hsl(180, 1%, 34%);
+    line-height: 24px;
+
 }
 
 button {
     background-color:#67b54b;
     color:#fff;
 }
-
+.logo {
+    width: 15%;
+}
+.logo > img {
+    width: 50%;
+}
 header{
         margin: 0px 0px 40px;
         padding: 0px 0px;
@@ -27,33 +42,28 @@ header{
       line-height: 45px;
       font-family: sans-serif;
 }
-.logo {
-    width: 15%;
-}
-.logo > img {
-    width: 50%;
-}
-.navbar{
-    width: 70%;
-    text-align: center;
-    font-weight: 500;
 
-}
 .action{
-    width: 15%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    text-align: right;
+    font-weight: 600;
    
 }
 .main{
-    margin: 140px;
+    margin-top: 100px;
     text-align: center;
 }
-li{
-    margin: 25px 25px 25px 25px;
-    display: inline;
-    color:#025157;
-
+.main form button{
+    font-size: 16px;
+    padding: 4px 6px 4px 6px;
+    background-color: #67b54b;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
 }
-.buttonn{
+.action button{
     font-size: 14px;
     padding: 14px 10px;
     background-color: #67b54b;
@@ -61,27 +71,24 @@ li{
     border: none;
     color: #fff;
 }
+li{
+    margin: 25px 25px 25px 25px;
+    display: inline;
+    color:#025157;
+
+}
+
 .action > a{
     color:#67b54b;
     vertical-align: middle;
     margin-right: 10px;
 }
-.clasvideo2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    height: 100vh;
-}
-.clasvideo{
-    display: flex;
-    flex-direction: column ;
-  
-}
+
 .container{
     display: flex;
     gap: 50px;
 }
-.classs{
+.explanatory-video{
     display: flex;
     flex-direction: column;
 
@@ -96,9 +103,19 @@ li{
     display: flex;
     flex-direction: column ;
     gap: 20px;
+    font-family: "Open Sans", sans-serif; 
 }
 button:hover {
     background-color: rgb(0, 255, 55);
+}
+.featimage{
+    width: 40%;
+    height: 80%;
+    margin-right: 10px;
+}
+.publish-actions {
+    display: grid;
+    grid-template-columns: 1fr 120px;
 }
 .features{
     margin-bottom: 120px;
@@ -109,21 +126,229 @@ button:hover {
     gap: 40px;
     background-color: #025157;
     padding: 60px 120px;
+}
+
+.feature{
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    background-color: #fff;
+    padding: 36px;
+    border-radius: 12px;
+}
+
+.feature-grid {
+    display: grid;
+    gap: 12px;
+    background-color: white;
+    padding: 36px;
+    border-radius: 12px;
+}
+.feature-details{
+    display: grid;
+}
+
+
+.success-stories{
+    display: flex;
+    gap: 50px;
+    background-color: #67b54b;
+    padding: 5% 15%;
+}
+.success-stories .overview h2{
+    font-size: 48px;
+    line-height: 54px;
+    color: #925157;
+}
+.success-stories .overview p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #343434;
+}
+.success-stories .overview button{
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+    background-color: midnightblue;
+}
+.success-stories .overview img{
+    width: 500px;
+    max-width: 100%;
+}
+
+.success-stories .stories-carousel {
+    flex: 1;
+}
+/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+}
+/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+/* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+.success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+}
+/* Estos son los estilos para textos y acomodo de elementos */
+.success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+.success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.success-stories .card .card-body .results p {
+    margin: 0;
+}
+.success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+}
+.success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+}
+
+.success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+}
+
+.success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
     width: 100%;
 }
-.caracteristica1{
-    display: grid;
-    background-color: #fff;
-    border-radius: 5px;
-    align-items: baseline;
-    padding: 36px;
+
+.carousel-indicators {
+    bottom: -45px;
 }
-.feature{
-    display: grid;
-    padding: 30px 20px 40px 40px;
+
+
+@media (max-width: 575px) {
+  /* .navbar, .action{
+  display: none;
+
+   }*/
+   .main > img{
+    width: 100%;
+    }
+   h1{
+    font-size: 30px;
+   }
+   .main{
+    margin-top: 80px;
+   }
+   .container{
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%
 }
-.featimage{
-    flex: 1;
-    width: 40%;
-    height: 80%;
+.explanatory-video, .publish {
+    width: 90%;
+}
+
+.explanatory-video video {
+    width: 100%;
+}
+.publish h3 {
+    font-size: 25px;
+}
+
+.publish p {
+    line-height: 24px;
+}
+
+.publish-actions {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+}
+.features {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.feature > img {
+    display: none;
+}
+
+.feature-grid {
+    grid-template-columns: 1fr;
+}
+
+.feature-grid > img {
+    display: none;
+}
+
+}
+@media ((min-width: 576px) and (max-width: 767px)) {
+   
+}
+@media ((min-width:768px) and (max-width:991px)) {
+    
+}
+@media ((min-width:992px) and (max-width:1199px)) {
+    
+}
+@media (min-width:1200px) {
+    
 }

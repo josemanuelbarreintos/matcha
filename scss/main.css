@@ -1,0 +1,120 @@
+/** colores */
+/** fuentes */
+.blog .title {
+  font-family: "Alegreya", sans-serif;
+  color: #025157;
+}
+
+.blog {
+  background-color: white;
+  padding: 5% 10%;
+  max-width: unset;
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog .process-list .process .process-description {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.blog button {
+  height: auto;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  margin-bottom: 15px;
+  background-color: #135359;
+}
+
+.feature a {
+  color: #67b54b;
+}
+.feature .feature-details h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+.feature .feature-details img {
+  height: 100px;
+}
+.feature .feature-details p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+.feature .feature-details a {
+  color: #67b54b;
+  font-weight: 600;
+  font-size: 16px;
+}
+.feature .feature-details h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+.feature .feature-details img {
+  height: 100px;
+}
+
+.card .card-body card-title {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+.card .card-body .metadata {
+  font-weight: 500;
+  font-size: 14px;
+  color: #979797;
+}
+.card .card-body .metadata .category {
+  color: #67b54b;
+}
+.card .card-body .metadata .read-time {
+  font-weight: bolder;
+}
+.card .card-body .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  line-height: 1.5em;
+  min-height: 6em;
+}
+.card .card-body .author {
+  display: flex;
+  align-items: center;
+}
+.card .card-body .author img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.card .card-body .author p {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.blog{
+    background-color: white;
+    padding: 5% 10%;
+    max-width: unset;
+    .title{
+        @extend %base-title;
+    }
+
+    .process-list{
+        margin-top: 40px;
+        margin-bottom: 36px;
+    
+    .process{
+        margin-bottom: 25px;
+        & > div{
+            & > h3{
+                color:$dark-green-title;
+                margin-bottom: 0;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            & > p{
+                color: $dark-green-text;
+                margin: 0;
+            }
+        }
+            .process-icon{
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+                img {
+                    height: 100%;
+                }
+            }
+            .process-description{
+                margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+            }
+        
+    }
+}
+    button{
+        height: auto;
+        border-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+        background-color: $dark-green-text;
+    }
+}
+
+.feature {
+    a{
+        color: #67b54b;
+      
+    }
+    .feature-details{
+        h3 {
+        font-size: 24px;
+        color: #343434;
+        font-weight: 400;
+    }
+    img {
+        height: 100px;
+    }
+    p {
+        font-size: 16px;
+        color: #7e7e7e;
+        font-weight: 400;
+    }
+    a {
+        color: #67b54b;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #343434;
+        font-weight: 400;
+    }
+    img {
+        height: 100px;
+    }
+   
+    }
+}
+.card{
+.card-body{
+    card-title{
+        font-size: 24px;
+        color: #4a4a4a;
+    }
+    .metadata{
+        font-weight: 500;
+    font-size: 14px;
+    color: #979797;
+    .category{
+        color: #67b54b;
+    }
+    .read-time{
+        font-weight: bolder;
+    }
+    }
+    .card-text{
+        color: #4a4a4a;
+        font-size: 18px;
+        line-height: 1.5em;
+        min-height: 6em;
+    }
+    .author{
+        display:flex;
+       align-items:center;
+        img{
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+        p{
+            margin-left: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+    }
+}
+}
+/*# sourceMappingURL=main.css.map */
